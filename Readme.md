@@ -59,3 +59,8 @@ web ベースのやつも存在する
 
 誤: rpar/rseq
 正: rpar/rpar
+
+### p.22 下から10行目
+
+誤: 2.4 Deepseq
+正: 2.4 DeepSeq
