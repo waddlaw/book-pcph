@@ -1,7 +1,6 @@
 cabal-version:      2.4
 name:               par-sudoku
 version:            0.1.0.0
-extra-source-files: CHANGELOG.md
 
 common deps
   build-depends:    base >=4.8 && <4.15
