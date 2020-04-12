@@ -25,6 +25,8 @@ $ threadscope --version
 ThreadScope version 0.2.13
 ```
 
+windows 環境の場合はバイナリを直接ダウンロードした方が良いと思う。=> [v0.2.13](https://github.com/haskell/ThreadScope/releases/tag/v0.2.13)
+
 web ベースのやつも存在する。イベントログをアップロードして使ってみようと思ったけど、上手くいかなかったのでちょっと違うアプリなのかもしれません。
 
 - [speedscope.app](https://www.speedscope.app/)
