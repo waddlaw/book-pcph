@@ -25,13 +25,21 @@ $ threadscope --version
 ThreadScope version 0.2.13
 ```
 
-web ベースのやつも存在する
+web ベースのやつも存在する。イベントログをアップロードして使ってみようと思ったけど、上手くいかなかったのでちょっと違うアプリなのかもしれません。
 
 - [speedscope.app](https://www.speedscope.app/)
   - [jlfwong/speedscope](https://github.com/jlfwong/speedscope)
   - [speedscope - Interactive Flamegraph Explorer](http://jamie-wong.com/post/speedscope/)
 
-## 正誤表
+## コード
+
+chapter | コード
+--------|-------
+ch02 | [rpar](/ch02/rpar), [par-sudoku](/ch02/par-sudoku)
+
+## My正誤表
+
+オライリーの書籍ページに正誤表があります。以下はそれに載っていないものです。
 
 ### p.xiii 目次
 
