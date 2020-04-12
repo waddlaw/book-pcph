@@ -10,6 +10,17 @@
 - [parconc-examples - Hackage](https://hackage.haskell.org/package/parconc-examples)
   - [github](https://github.com/simonmar/parconc-examples)
 
+## 実行環境
+
+```shell
+$ stack --version
+Version 2.1.3, Git revision 636e3a759d51127df2b62f90772def126cdf6d1f (7735 commits) x86_64 hpack-0.31.2
+
+$ cabal -V
+cabal-install version 3.2.0.0
+compiled using version 3.2.0.0 of the Cabal library
+```
+
 ## ThreadScope のインストール
 
 - ghc-8.10 ではビルドできなかった。
