@@ -3,3 +3,4 @@ packages:
   - ch02/par-sudoku
   - ch02/rpar
   - ch03/strat
+  - ch03/kmeans
