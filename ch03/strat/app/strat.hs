@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Control.Parallel.Strategies hiding (parPair)
+import Control.Parallel.Strategies hiding (parPair, rdeepseq)
 import Control.DeepSeq
 
 main :: IO ()
