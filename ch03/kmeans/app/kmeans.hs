@@ -1,5 +1,6 @@
 module Main (main) where
 
+import Control.Parallel.Strategies
 import Data.Function
 import Data.List
 import Text.Printf
@@ -72,3 +73,44 @@ kmeans_seq nclusters points clusters =
 
 tooMany :: Int
 tooMany = 80
+
+split :: Int -> [a] -> [[a]]
+split numChunks xs = chunk (length xs `quot` numChunks) xs
+
+chunk :: Int -> [a] -> [[a]]
+chunk n [] = []
+chunk n xs = as : chunk n bs
+  where
+    (as, bs) = splitAt n xs
+
+addPointSums :: PointSum -> PointSum -> PointSum
+addPointSums (PointSum c1 x1 y1) (PointSum c2 x2 y2)
+  = PointSum (c1+c2) (x1+x2) (y1+y2)
+
+combine :: Vector PointSum -> Vector PointSum -> Vector PointSum
+combine = Vector.zipWith addPointSums
+
+parSteps_strat :: Int -> [Cluster] -> [[Point]] -> [Cluster]
+parSteps_strat nclusters clusters pointss =
+  makeNewClusters $
+    foldr1 combine $
+      (map (assign nclusters clusters) pointss `using` parList rseq)
+
+kmeans_strat :: Int -> Int -> [Point] -> [Cluster] -> IO [Cluster]
+kmeans_strat numChunks nclusters points clusters =
+  let
+    chunks = split numChunks points
+
+    loop :: Int -> [Cluster] -> IO [Cluster]
+    loop n clusters | n > tooMany = do
+      printf "giving up."
+      return clusters
+    loop n clusters = do
+      printf "iteration %d\n" n
+      putStr (unlines (map show clusters))
+      let clusters' = parSteps_strat nclusters clusters chunks
+      if clusters' == clusters
+        then return clusters
+        else loop (n+1) clusters'
+  in
+  loop 0 clusters
