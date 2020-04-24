@@ -1,0 +1,13 @@
+cabal-version:      2.4
+name:               strat
+version:            0.1.0.0
+
+executable strat
+  main-is:          app/strat.hs
+  build-depends:
+    , base      >=4.8 && <4.15
+    , deepseq   ^>=1.4
+    , parallel  ^>=3.2
+
+  ghc-options:      -O2 -threaded
+  default-language: Haskell2010

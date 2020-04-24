@@ -1,0 +1,5 @@
+resolver: lts-15.9
+packages:
+  - ch02/par-sudoku
+  - ch02/rpar
+  - ch03/strat

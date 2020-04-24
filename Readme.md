@@ -49,39 +49,44 @@ web ベースのやつも存在する。イベントログをアップロード�
 chapter | コード
 --------|-------
 ch02 | [rpar](/ch02/rpar), [par-sudoku](/ch02/par-sudoku)
+ch03 | [strat](/ch03/strat)
 
 ## My正誤表
 
 オライリーの書籍ページに正誤表があります。以下はそれに載っていないものです。
 
-### p.xiii 目次
+### ch02
+
+#### p.xiii 目次
 
 誤: 2.4 Deepseq
 正: 2.4 DeepSeq
 
-### p.3 下から2行目
+#### p.3 下から2行目
 
 最後のスラッシュいらない。
 
 誤: http://www.haskell.org/haskellwiki/ThreadScope/
 正: http://www.haskell.org/haskellwiki/ThreadScope
 
-### p.6 下から4行目
+#### p.6 下から4行目
 
 誤: 「2章　基本の並列性」
 正: 「2章　基本の並列性: Evalモナド」
 
-### p.13 上から5行目
+#### p.13 上から5行目
 
 誤: 2.4 Deepseq
 正: 2.4 DeepSeq
 
-### p.18 下から2行目
+#### p.18 下から2行目
 
 誤: rpar/rseq
 正: rpar/rpar
 
-### p.22 下から10行目
+#### p.22 下から10行目
 
 誤: 2.4 Deepseq
 正: 2.4 DeepSeq
+
+### ch03
