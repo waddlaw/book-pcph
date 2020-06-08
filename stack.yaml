@@ -4,3 +4,9 @@ packages:
   - ch02/rpar
   - ch03/strat
   - ch03/kmeans
+  - ch04/shortest-paths
+  - ch04/pipeline
+  - ch04/timetable
+  - ch05/repa-example
+  - ch05/fwdense
+  - ch05/rotateimage

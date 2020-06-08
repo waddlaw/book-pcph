@@ -1,0 +1,16 @@
+cabal-version: 2.4
+name:          pipeline
+version:       0.1.0.0
+
+common common
+  build-depends:    base >=4.8 && <4.15
+  default-language: Haskell2010
+
+executable pipeline
+  import:        common
+  main-is:       Main.hs
+  build-depends:
+    , deepseq
+    , monad-par
+
+  ghc-options:   -O2

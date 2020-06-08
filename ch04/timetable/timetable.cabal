@@ -1,0 +1,17 @@
+cabal-version: 2.4
+name:          timetable
+version:       0.1.0.0
+
+common common
+  build-depends:    base >=4.8 && <4.15
+  default-language: Haskell2010
+
+executable timetable
+  import:        common
+  main-is:       timetable.hs
+  build-depends:
+    , containers
+    , deepseq
+    , monad-par
+
+  ghc-options:   -O2
