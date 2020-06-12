@@ -1,0 +1,4 @@
+import Data.Array.Accelerate as A
+import Data.Array.Accelerate.Interpreter as I
+
+:set -XFlexibleContexts

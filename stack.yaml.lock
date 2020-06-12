@@ -3,10 +3,83 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    size: 647022
+    url: https://github.com/AccelerateHS/accelerate/archive/170a2474705544bc4037f0ac2814a44edeb0790e.tar.gz
+    name: accelerate
+    version: 1.4.0.0
+    sha256: f563c970f5c14d32e524b489acd6d53b9a31d5eb71357717758bf7027b0f163b
+    pantry-tree:
+      size: 13661
+      sha256: d3adf4cbd2d2f74777d0a3b1f2bf988b88c4864964f40757db4ca42ea39c45de
+  original:
+    url: https://github.com/AccelerateHS/accelerate/archive/170a2474705544bc4037f0ac2814a44edeb0790e.tar.gz
+- completed:
+    size: 262471
+    subdir: accelerate-llvm
+    url: https://github.com/AccelerateHS/accelerate-llvm/archive/55ca08348002d69e54a146657cb15867582d0133.tar.gz
+    name: accelerate-llvm
+    version: 1.4.0.0
+    sha256: 0886d8c4d8ef5e86bd6d807dd96b9f4e51066bed44f2e7e18339e868c2c18700
+    pantry-tree:
+      size: 5452
+      sha256: 7a758b0c0735dbf27e6a4a35e2142478011c3f146abf6c454fffe6935b835041
+  original:
+    subdir: accelerate-llvm
+    url: https://github.com/AccelerateHS/accelerate-llvm/archive/55ca08348002d69e54a146657cb15867582d0133.tar.gz
+- completed:
+    size: 262471
+    subdir: accelerate-llvm-ptx
+    url: https://github.com/AccelerateHS/accelerate-llvm/archive/55ca08348002d69e54a146657cb15867582d0133.tar.gz
+    name: accelerate-llvm-ptx
+    version: 1.4.0.0
+    sha256: 0886d8c4d8ef5e86bd6d807dd96b9f4e51066bed44f2e7e18339e868c2c18700
+    pantry-tree:
+      size: 4775
+      sha256: ae97951d666ef0ce2d594dc49810cff461a60c6cbd5f9cdada4cae10ea61b1dc
+  original:
+    subdir: accelerate-llvm-ptx
+    url: https://github.com/AccelerateHS/accelerate-llvm/archive/55ca08348002d69e54a146657cb15867582d0133.tar.gz
+- completed:
+    size: 813119
+    url: https://github.com/tmcdonell/cuda/archive/bf6efc8f9118caac91bde8c9535970f7ab645ead.tar.gz
+    name: cuda
+    version: 0.10.1.1
+    sha256: 5bbf89e78d86444a752db1c623f59a7994d8166e25cac86a499cb82aebad97b5
+    pantry-tree:
+      size: 10251
+      sha256: 7c8e46aad8e5e4bd679896828aecf5fcd5b85b6c029575c5ec27af0d9c71a0fe
+  original:
+    url: https://github.com/tmcdonell/cuda/archive/bf6efc8f9118caac91bde8c9535970f7ab645ead.tar.gz
+- completed:
+    size: 23229
+    url: https://github.com/tmcdonell/nvvm/archive/219637eab3aab7275ce0a0c9b0e1855be912fe8a.tar.gz
+    name: nvvm
+    version: 0.10.0.0
+    sha256: fa02c518ce5cef42960474789a4f1a50a9dc33c07e7c180bc7db63e69d092856
+    pantry-tree:
+      size: 1534
+      sha256: 63c3b9c32cbef7d3651e3c5964e8be8756d35a271db6a8086165de3e37ac27ac
+  original:
+    url: https://github.com/tmcdonell/nvvm/archive/219637eab3aab7275ce0a0c9b0e1855be912fe8a.tar.gz
+- completed:
+    hackage: repa-3.4.1.4@sha256:70ef4758937baa29be1ac0a78ecbccf341b3f276c9efb632b4829eea80445e2d,3315
+    pantry-tree:
+      size: 2965
+      sha256: 294773b0e6be4a4198133715d4c7f2d0d8e5aec4adea7e59578d1b3823a7879d
+  original:
+    hackage: repa-3.4.1.4
+- completed:
+    hackage: repa-devil-0.3.2.6@sha256:b58a7beaad814abe90f68332fffe05748f2af14fef0dfd3352d52c27fae6924d,2131
+    pantry-tree:
+      size: 224
+      sha256: 2703ca3f4d696acc174103b14acea3e36470977f62300058f2834c45c5416469
+  original:
+    hackage: repa-devil-0.3.2.6
 snapshots:
 - completed:
-    size: 492027
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/15/9.yaml
-    sha256: 11394dc975e96c2fea90f7f2b3229630d46351a092ebcec78f0a56403930b429
-  original: lts-15.9
+    size: 531237
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/0.yaml
+    sha256: 210e15b7043e2783115afe16b0d54914b1611cdaa73f3ca3ca7f8e0847ff54e5
+  original: lts-16.0

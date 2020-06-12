@@ -1,0 +1,28 @@
+cabal-version: 2.4
+name:          mandel
+version:       0.1.0.0
+
+library
+  hs-source-dirs:   src
+  exposed-modules:  Config
+  build-depends:
+    , accelerate
+    , accelerate-llvm-ptx
+    , base
+    , fclabels
+
+  default-language: Haskell2010
+
+executable mandel
+  main-is:          mandel.hs
+  build-depends:
+    , accelerate
+    , accelerate-io
+    , accelerate-llvm-ptx
+    , repa
+    , repa-devil
+    , base
+    , mandel
+
+  ghc-options:      -O2 -threaded
+  default-language: Haskell2010

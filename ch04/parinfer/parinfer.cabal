@@ -1,0 +1,41 @@
+cabal-version: 2.4
+name:          parinfer
+version:       0.1.0.0
+
+library
+  hs-source-dirs:     src
+  exposed-modules:
+    Environment
+    FiniteMap
+    Infer
+    InferMonad
+    Lex
+    MaybeM
+    MyList
+    Parse
+    Shows
+    StateX
+    Substitution
+    Term
+    Type
+
+  build-depends:
+    , array
+    , base
+    , containers
+    , deepseq
+    , monad-par
+
+  build-tool-depends: alex:alex -any, happy:happy -any
+  default-language:   Haskell2010
+
+executable parinfer
+  main-is:          parinfer.hs
+  build-depends:
+    , base
+    , containers
+    , monad-par
+    , parinfer
+
+  ghc-options:      -O2 -threaded
+  default-language: Haskell2010

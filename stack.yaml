@@ -1,12 +1,38 @@
-resolver: lts-15.9
+resolver: lts-16.0
 packages:
-  - ch02/par-sudoku
-  - ch02/rpar
-  - ch03/strat
-  - ch03/kmeans
-  - ch04/shortest-paths
-  - ch04/pipeline
+  # - ch02/par-sudoku
+  # - ch02/rpar
+  # - ch03/strat
+  # - ch03/kmeans
+  - ch04/fwsparse
+  # - ch04/pipeline
   - ch04/timetable
+  - ch04/parinfer
   - ch05/repa-example
   - ch05/fwdense
   - ch05/rotateimage
+  - ch06/accelerate-example
+  - ch06/fwaccel
+  # - ch06/mandel
+
+extra-deps:
+  - github: AccelerateHS/accelerate
+    commit: 170a2474705544bc4037f0ac2814a44edeb0790e
+  - github: AccelerateHS/accelerate-llvm
+    commit: 55ca08348002d69e54a146657cb15867582d0133
+    subdirs:
+      - accelerate-llvm
+      - accelerate-llvm-ptx
+  - github: tmcdonell/cuda
+    commit: bf6efc8f9118caac91bde8c9535970f7ab645ead
+  - github: tmcdonell/nvvm
+    commit: 219637eab3aab7275ce0a0c9b0e1855be912fe8a
+  - repa-3.4.1.4
+  - repa-devil-0.3.2.6
+
+allow-newer: true
+
+extra-include-dirs:
+  - /usr/local/cuda-10.1/include
+extra-lib-dirs:
+  - /usr/local/cuda-10.1/lib64

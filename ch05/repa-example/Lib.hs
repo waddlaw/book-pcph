@@ -1,7 +1,9 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE TypeApplications #-}
-import Data.Array.Repa as Repa
+{-# LANGUAGE TypeOperators #-}
+module Lib where
 
+import Data.Array.Repa as Repa
 import Data.Functor.Identity 
 
 ex1 :: Array U DIM1 Int

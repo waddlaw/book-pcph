@@ -1,0 +1,75 @@
+packages:
+  -- ch02/par-sudoku
+  -- ch02/rpar
+  -- ch03/strat
+  -- ch03/kmeans
+  ch04/fwsparse
+  -- ch04/pipeline
+  ch04/timetable
+  ch04/parinfer
+  ch05/repa-example
+  ch05/fwdense
+  ch05/rotateimage
+  ch06/accelerate-example
+  ch06/fwaccel
+  -- ch06/mandel accelerate-io が ghc-8.8 で動くようになれば使える
+  ch07/fork
+  ch07/reminders
+  ch07/mvar
+
+with-compiler: ghc-8.8.3
+
+source-repository-package
+  type: git
+  location: https://github.com/AccelerateHS/accelerate
+  tag: 170a2474705544bc4037f0ac2814a44edeb0790e
+
+-- source-repository-package
+--   type: git
+--   location: https://github.com/AccelerateHS/accelerate-io
+--   tag: e83461b194bb046a6f129a6be7f0e865653ed365
+--   subdir: accelerate-io
+
+source-repository-package
+  type: git
+  location: https://github.com/AccelerateHS/accelerate-llvm
+  tag: 55ca08348002d69e54a146657cb15867582d0133
+  subdir: accelerate-llvm accelerate-llvm-ptx
+
+source-repository-package
+  type: git
+  location: https://github.com/tmcdonell/cuda
+  tag: bf6efc8f9118caac91bde8c9535970f7ab645ead
+
+source-repository-package
+  type: git
+  location: https://github.com/tmcdonell/nvvm
+  tag: 219637eab3aab7275ce0a0c9b0e1855be912fe8a
+
+package cuda
+  extra-lib-dirs: /usr/local/cuda-10.1/lib64
+  extra-include-dirs: /usr/local/cuda-10.1/include
+
+constraints:
+  accelerate ^>=1.4,
+  -- accelerate-io ^>=1.3,
+  accelerate-llvm ^>=1.4,
+  accelerate-llvm-ptx ^>=1.4,
+  alex ^>=3.2, 
+  array ^>=0.5,
+  base ^>=4.13,
+  containers ^>=0.6,
+  cuda ^>=0.10,
+  deepseq ^>=1.4,
+  fclabels ^>=2.0,
+  happy ^>=1.19,
+  monad-par ^>=0.3,
+  nvvm ^>=0.10,
+  SparseGraph ^>=1.1,
+  random ^>=1.1,
+  repa ^>=3.4,
+  repa-devil ^>=0.3
+
+allow-newer:
+  -- accelerate-io:base
+  repa-devil:transformers
