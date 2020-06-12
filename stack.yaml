@@ -14,6 +14,12 @@ packages:
   - ch06/accelerate-example
   - ch06/fwaccel
   # - ch06/mandel
+  - ch07/fork
+  - ch07/reminders
+  - ch07/mvar
+  - ch07/logger
+  - ch07/phonebook
+  - ch07/chan
 
 extra-deps:
   - github: AccelerateHS/accelerate

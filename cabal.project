@@ -16,6 +16,9 @@ packages:
   ch07/fork
   ch07/reminders
   ch07/mvar
+  ch07/logger
+  ch07/phonebook
+  ch07/chan
 
 with-compiler: ghc-8.8.3
 
