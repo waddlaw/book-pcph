@@ -16,7 +16,7 @@ import Data.Array.Accelerate.Array.Sugar        ( Array(..) )
 
 import Prelude                                  as P
 import Data.Array.Accelerate                    as A hiding ( size )
-import Data.Array.Accelerate.IO
+-- import Data.Array.Accelerate.IO
 import qualified Data.Array.Repa as R
 import qualified Data.Array.Repa.Repr.ForeignPtr as R
 import Data.Array.Repa.IO.DevIL
@@ -108,7 +108,7 @@ iter c p =
      (z,i) = unlift p :: (Exp Complex, Exp Int)    -- <1>
      z' = next c z                                 -- <2>
   in
-  (dot z' >* 4.0) ?                                -- <3>
+  (dot z' A.> 4.0) ?                                -- <3>
      ( p                                           -- <4>
      , lift (z', i+1)                              -- <5>
      )
@@ -146,7 +146,7 @@ makePicture opt limit zs = R.fromForeignPtr (R.Z R.:. h R.:. w R.:. 4) rawData
 
     {-# NOINLINE rawData #-}
     rawData     = let (Array _ adata)   = arrPixels
-                      ((), ptr)         = ptrOfArrayData adata
+                      ptr         = ptrsOfArrayData adata
                   in
                   unsafePerformIO       $ newForeignPtr_ (castPtr ptr)
 

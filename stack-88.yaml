@@ -1,0 +1,36 @@
+resolver: lts-14.27
+packages:
+  # - ch02/par-sudoku
+  # - ch02/rpar
+  # - ch03/strat
+  # - ch03/kmeans
+  # - ch04/fwsparse
+  # - ch04/pipeline
+  # - ch04/timetable
+  # - ch04/parinfer
+  # - ch05/repa-example
+  # - ch05/fwdense
+  # - ch05/rotateimage
+  # - ch06/accelerate-example
+  # - ch06/fwaccel
+  - ch06/mandel
+  # - ch07/fork
+  # - ch07/reminders
+  # - ch07/mvar
+  # - ch07/logger
+  # - ch07/phonebook
+  # - ch07/chan
+
+extra-deps:
+- accelerate-1.2.0.1
+- accelerate-io-1.2.0.0
+- accelerate-llvm-1.2.0.1
+- accelerate-llvm-ptx-1.2.0.1
+- repa-devil-0.3.2.6
+
+allow-newer: true
+
+# extra-include-dirs:
+#   - /usr/local/cuda-10.1/include
+# extra-lib-dirs:
+#   - /usr/local/cuda-10.1/lib64
