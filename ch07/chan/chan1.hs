@@ -46,19 +46,11 @@ dupChan (Chan _ writeVar) = do
   return (Chan newReadVar writeVar)
 -- >>
 
--- main = do
---   c <- newChan
---   writeChan c 'a'
---   readChan c >>= print
-
 main = do
   c <- newChan
   writeChan c 'a'
-  -- writeChan c 'x'
   readChan c >>= print
   c2 <- dupChan c
-  -- writeChan c 'y'
-  -- writeChan c 'z'
   writeChan c 'b'
   readChan c >>= print
   readChan c2 >>= print

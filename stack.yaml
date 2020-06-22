@@ -9,10 +9,10 @@ packages:
   - ch04/timetable
   - ch04/parinfer
   - ch05/repa-example
-  - ch05/fwdense
-  - ch05/rotateimage
+  # - ch05/fwdense
+  # - ch05/rotateimage
   - ch06/accelerate-example
-  - ch06/fwaccel
+  # - ch06/fwaccel
   # - ch06/mandel
   - ch07/fork
   - ch07/reminders

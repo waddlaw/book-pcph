@@ -2,7 +2,7 @@ cabal-version: 2.4
 name:          mvar
 version:       0.1.0.0
 
-executable mvar
+executable mvar1
   main-is:          mvar1.hs
   build-depends:    base
   ghc-options:      -O2

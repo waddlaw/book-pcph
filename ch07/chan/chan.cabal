@@ -2,8 +2,8 @@ cabal-version: 2.4
 name:          chan
 version:       0.1.0.0
 
-executable chan
-  main-is:          chan.hs
+executable chan1
+  main-is:          chan1.hs
   build-depends:    base
   ghc-options:      -O2
   default-language: Haskell2010

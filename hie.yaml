@@ -1,0 +1,118 @@
+cradle:
+  cabal:
+    - path: "ch02/par-sudoku/src"
+      component: "lib:par-sudoku"
+
+    - path: "ch02/par-sudoku/./app/Sudoku1.hs"
+      component: "par-sudoku:exe:sudoku1"
+
+    - path: "ch02/par-sudoku/./app/Sudoku2.hs"
+      component: "par-sudoku:exe:sudoku2"
+
+    - path: "ch02/par-sudoku/./app/Sudoku3.hs"
+      component: "par-sudoku:exe:sudoku3"
+
+    - path: "ch02/par-sudoku/./app/Sudoku4.hs"
+      component: "par-sudoku:exe:sudoku4"
+
+    - path: "ch02/rpar/./rpar.hs"
+      component: "rpar:exe:rpar"
+
+    - path: "ch03/kmeans/src"
+      component: "lib:kmeans"
+
+    - path: "ch03/kmeans/./app/kmeans.hs"
+      component: "kmeans:exe:kmeans"
+
+    - path: "ch03/strat/./app/strat.hs"
+      component: "strat:exe:strat"
+
+    - path: "ch03/strat/./app/parlist.hs"
+      component: "strat:exe:parlist"
+
+    - path: "ch04/fwsparse/src"
+      component: "lib:fwsparse"
+
+    - path: "ch04/fwsparse/./fwsparse.hs"
+      component: "fwsparse:exe:fwsparse"
+
+    - path: "ch04/fwsparse/./fwsparse1.hs"
+      component: "fwsparse:exe:fwsparse1"
+
+    - path: "ch04/parinfer/src"
+      component: "lib:parinfer"
+
+    - path: "ch04/parinfer/./parinfer.hs"
+      component: "parinfer:exe:parinfer"
+
+    - path: "ch04/pipeline/./Main.hs"
+      component: "pipeline:exe:pipeline"
+
+    - path: "ch04/timetable/./timetable.hs"
+      component: "timetable:exe:timetable"
+
+    - path: "ch04/timetable/./timetable1.hs"
+      component: "timetable:exe:timetable1"
+
+    - path: "ch04/timetable/./timetable2.hs"
+      component: "timetable:exe:timetable2"
+
+    - path: "ch04/timetable/./timetable3.hs"
+      component: "timetable:exe:timetable3"
+
+    - path: "ch05/fwdense/./fwdense.hs"
+      component: "fwdense:exe:fwdense"
+
+    - path: "ch05/fwdense/./fwdense1.hs"
+      component: "fwdense:exe:fwdense1"
+
+    - path: "ch05/repa-example/."
+      component: "lib:repa-example"
+
+    - path: "ch05/rotateimage/./rotateimage.hs"
+      component: "rotateimage:exe:rotateimage"
+
+    - path: "ch06/accelerate-example/."
+      component: "lib:accelerate-example"
+
+    - path: "ch06/fwaccel/./fwaccel.hs"
+      component: "fwaccel:exe:fwaccel"
+
+    - path: "ch06/fwaccel/./fwaccel-gpu.hs"
+      component: "fwaccel:exe:fwaccel-gpu"
+
+    - path: "ch06/mandel/src"
+      component: "lib:mandel"
+
+    - path: "ch06/mandel/./mandel.hs"
+      component: "mandel:exe:mandel"
+
+    - path: "ch07/chan/./chan1.hs"
+      component: "chan:exe:chan1"
+
+    - path: "ch07/chan/./chan2.hs"
+      component: "chan:exe:chan2"
+
+    - path: "ch07/fork/./fork.hs"
+      component: "fork:exe:fork"
+
+    - path: "ch07/logger/./logger.hs"
+      component: "logger:exe:logger"
+
+    - path: "ch07/mvar/./mvar1.hs"
+      component: "mvar:exe:mvar1"
+
+    - path: "ch07/mvar/./mvar2.hs"
+      component: "mvar:exe:mvar2"
+
+    - path: "ch07/mvar/./mvar3.hs"
+      component: "mvar:exe:mvar3"
+
+    - path: "ch07/phonebook/./phonebook.hs"
+      component: "phonebook:exe:phonebook"
+
+    - path: "ch07/reminders/./reminders.hs"
+      component: "reminders:exe:reminders"
+
+    - path: "ch07/reminders/./reminders2.hs"
+      component: "reminders:exe:reminders2"

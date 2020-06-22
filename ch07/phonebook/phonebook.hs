@@ -23,6 +23,13 @@ insert :: PhoneBookState -> Name -> PhoneNumber -> IO ()
 insert (PhoneBookState m) name number = do
   book <- takeMVar m
   putMVar m (Map.insert name number book)
+
+  -- スペースリークのリスクを無くす方法
+  -- putMVar m $! Map.insert name number book
+  --
+  -- let book' = Map.insert name number book
+  -- putMVar m book'
+  -- seq book' (return ())
 -- >>
 
 -- <<lookup
