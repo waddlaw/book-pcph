@@ -1,0 +1,23 @@
+import Prelude hiding (catch)
+import Control.Exception
+import Data.Typeable
+:set -XDeriveDataTypeable
+
+data MyException = MyException deriving (Show, Typeable)
+instance Exception MyException
+
+throw MyException
+throw MyException `catch` \e -> print e
+throw MyException `catch` \e -> print (e :: MyException)
+throw (ErrorCall "oops") `catch` \e -> print (e :: MyException)
+throw (ErrorCall "oops") `catch` \e -> print (e :: SomeException)
+
+:t try
+try (readFile "nonexistent") :: IO (Either IOException String)
+
+:t handle
+:t onException
+:t throwIO
+
+:t bracket
+:t finally

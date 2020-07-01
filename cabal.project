@@ -19,8 +19,10 @@ packages:
   ch07/logger
   ch07/phonebook
   ch07/chan
+  ch08/geturls
 
 with-compiler: ghc-8.8.3
+index-state: 2020-07-01T04:05:28Z
 
 source-repository-package
   type: git
@@ -66,9 +68,11 @@ constraints:
   deepseq ^>=1.4,
   fclabels ^>=2.0,
   happy ^>=1.19,
+  http-conduit ^>=2.3,
   monad-par ^>=0.3,
   nvvm ^>=0.10,
   SparseGraph ^>=1.1,
+  time ^>=1.9,
   random ^>=1.1,
   repa ^>=3.4,
   repa-devil ^>=0.3

@@ -421,3 +421,24 @@ Matrix (Z :. 2 :. 3)
 誤: `メッセージを渡すの使えます`
 
 正: `メッセージを渡すのに使えます`
+
+## ch08
+
+### p.151 finally の定義
+
+誤:
+
+```hs
+finally io after = do
+  io `onException` after
+  after
+```
+
+正:
+
+```hs
+finally io after = do
+  r <- io `onException` after
+  _ <- after
+  return r
+```

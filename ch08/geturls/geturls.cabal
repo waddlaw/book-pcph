@@ -1,0 +1,77 @@
+cabal-version: 2.4
+name:          geturls
+version:       0.1.0.0
+
+library
+  hs-source-dirs:   src
+  build-depends:
+    , base
+    , bytestring
+    , http-conduit
+    , time
+
+  exposed-modules:
+    GetURL
+    TimeIt
+
+  default-language: Haskell2010
+
+executable geturls1
+  main-is:          app/geturls1.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls2
+  main-is:          app/geturls2.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls3
+  main-is:          app/geturls3.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls4
+  main-is:          app/geturls4.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls5
+  main-is:          app/geturls5.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls6
+  main-is:          app/geturls6.hs
+  build-depends:
+    , base
+    , bytestring
+    , geturls
+
+  ghc-options:      -O2
+  default-language: Haskell2010

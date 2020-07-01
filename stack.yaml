@@ -20,6 +20,7 @@ packages:
   - ch07/logger
   - ch07/phonebook
   - ch07/chan
+  - ch08/geturls
 
 extra-deps:
   - github: AccelerateHS/accelerate
