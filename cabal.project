@@ -20,6 +20,11 @@ packages:
   ch07/phonebook
   ch07/chan
   ch08/geturls
+  ch09/geturlscancel
+  ch09/modifytwo
+  ch09/chan3
+  ch09/timeout
+  ch09/catch-mask
 
 with-compiler: ghc-8.8.3
 index-state: 2020-07-01T04:05:28Z

@@ -1,0 +1,9 @@
+cabal-version: 2.4
+name:          timeout
+version:       0.1.0.0
+
+executable timeout
+  main-is:          timeout.hs
+  build-depends:    base
+  ghc-options:      -O2
+  default-language: Haskell2010

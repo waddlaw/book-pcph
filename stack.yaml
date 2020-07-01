@@ -21,6 +21,11 @@ packages:
   - ch07/phonebook
   - ch07/chan
   - ch08/geturls
+  - ch09/geturlscancel
+  - ch09/modifytwo
+  - ch09/chan3
+  - ch09/timeout
+  - ch09/catch-mask
 
 extra-deps:
   - github: AccelerateHS/accelerate
@@ -39,7 +44,7 @@ extra-deps:
 
 allow-newer: true
 
-extra-include-dirs:
-  - /usr/local/cuda-10.1/include
-extra-lib-dirs:
-  - /usr/local/cuda-10.1/lib64
+# extra-include-dirs:
+#   - /usr/local/cuda-10.1/include
+# extra-lib-dirs:
+#   - /usr/local/cuda-10.1/lib64

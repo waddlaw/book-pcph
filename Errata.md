@@ -442,3 +442,11 @@ finally io after = do
   _ <- after
   return r
 ```
+
+## ch09
+
+### p.162 uninterruptibleMask の型
+
+誤: `uninterruptibleMask :: ((IO a -> IO a) -> IO b) -> IO b`
+
+正: `uninterruptibleMask :: ((forall a. IO a -> IO a) -> IO b) -> IO b`
