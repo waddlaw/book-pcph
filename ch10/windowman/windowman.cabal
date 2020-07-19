@@ -1,0 +1,10 @@
+cabal-version: 2.4
+name:          windowman
+version:       0.1.0.0
+
+library
+  hs-source-dirs:  src
+  build-depends:  base, containers, stm
+
+  exposed-modules: WindowManager
+  default-language: Haskell2010

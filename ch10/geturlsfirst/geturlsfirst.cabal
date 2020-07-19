@@ -1,0 +1,9 @@
+cabal-version: 2.4
+name:          geturlsfirst
+version:       0.1.0.0
+
+executable geturlsfirst
+  main-is:          geturlsfirst.hs
+  build-depends:    base, bytestring, stm, geturls
+  ghc-options:      -O2
+  default-language: Haskell2010

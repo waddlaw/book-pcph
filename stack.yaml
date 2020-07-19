@@ -26,6 +26,10 @@ packages:
   - ch09/chan3
   - ch09/timeout
   - ch09/catch-mask
+  - ch10/windowman
+  - ch10/tmvar
+  - ch10/geturlsfirst
+  - ch10/tchan
 
 extra-deps:
   - github: AccelerateHS/accelerate

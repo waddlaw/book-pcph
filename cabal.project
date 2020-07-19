@@ -25,6 +25,10 @@ packages:
   ch09/chan3
   ch09/timeout
   ch09/catch-mask
+  ch10/windowman
+  ch10/tmvar
+  ch10/geturlsfirst
+  ch10/tchan
 
 with-compiler: ghc-8.8.3
 index-state: 2020-07-01T04:05:28Z
@@ -68,6 +72,7 @@ constraints:
   alex ^>=3.2, 
   array ^>=0.5,
   base ^>=4.13,
+  bytestring ^>=0.10,
   containers ^>=0.6,
   cuda ^>=0.10,
   deepseq ^>=1.4,
@@ -80,7 +85,8 @@ constraints:
   time ^>=1.9,
   random ^>=1.1,
   repa ^>=3.4,
-  repa-devil ^>=0.3
+  repa-devil ^>=0.3,
+  stm ^>=2.5
 
 allow-newer:
   -- accelerate-io:base

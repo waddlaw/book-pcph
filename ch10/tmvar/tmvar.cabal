@@ -1,0 +1,10 @@
+cabal-version: 2.4
+name:          tmvar
+version:       0.1.0.0
+
+library
+  hs-source-dirs:  src
+  build-depends:  base, stm
+
+  exposed-modules: TMVar
+  default-language: Haskell2010
