@@ -116,3 +116,57 @@ cradle:
 
     - path: "ch07/reminders/./reminders2.hs"
       component: "reminders:exe:reminders2"
+
+    - path: "ch08/geturls/src"
+      component: "lib:geturls"
+
+    - path: "ch08/geturls/./app/geturls1.hs"
+      component: "geturls:exe:geturls1"
+
+    - path: "ch08/geturls/./app/geturls2.hs"
+      component: "geturls:exe:geturls2"
+
+    - path: "ch08/geturls/./app/geturls3.hs"
+      component: "geturls:exe:geturls3"
+
+    - path: "ch08/geturls/./app/geturls4.hs"
+      component: "geturls:exe:geturls4"
+
+    - path: "ch08/geturls/./app/geturls5.hs"
+      component: "geturls:exe:geturls5"
+
+    - path: "ch08/geturls/./app/geturls6.hs"
+      component: "geturls:exe:geturls6"
+
+    - path: "ch09/catch-mask/./catch-mask1.hs"
+      component: "catch-mask:exe:catch-mask1"
+
+    - path: "ch09/catch-mask/./catch-mask2.hs"
+      component: "catch-mask:exe:catch-mask2"
+
+    - path: "ch09/chan3/./chan3.hs"
+      component: "chan3:exe:chan3"
+
+    - path: "ch09/geturlscancel/./geturlscancel1.hs"
+      component: "geturlscancel:exe:geturlscancel1"
+
+    - path: "ch09/geturlscancel/./geturlscancel2.hs"
+      component: "geturlscancel:exe:geturlscancel2"
+
+    - path: "ch09/modifytwo/./modifytwo.hs"
+      component: "modifytwo:exe:modifytwo"
+
+    - path: "ch09/timeout/./timeout.hs"
+      component: "timeout:exe:timeout"
+
+    - path: "ch10/geturlsfirst/./geturlsfirst.hs"
+      component: "geturlsfirst:exe:geturlsfirst"
+
+    - path: "ch10/tchan/./TChan.hs"
+      component: "tchan:exe:tchan"
+
+    - path: "ch10/tmvar/src"
+      component: "lib:tmvar"
+
+    - path: "ch10/windowman/src"
+      component: "lib:windowman"
