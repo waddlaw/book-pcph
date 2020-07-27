@@ -1,0 +1,16 @@
+cabal-version: 2.4
+name:          chanbench
+version:       0.1.0.0
+
+library
+  hs-source-dirs:  src
+  build-depends:  base, stm
+
+  exposed-modules: TQueue, TList, TBQueue
+  default-language: Haskell2010
+
+executable chanbench
+  main-is:          app/chanbench.hs
+  build-depends:    base, async, stm, chanbench
+  ghc-options:      -O2
+  default-language: Haskell2010

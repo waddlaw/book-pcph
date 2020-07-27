@@ -30,6 +30,7 @@ packages:
   - ch10/tmvar
   - ch10/geturlsfirst
   - ch10/tchan
+  - ch10/chanbench
 
 extra-deps:
   - github: AccelerateHS/accelerate

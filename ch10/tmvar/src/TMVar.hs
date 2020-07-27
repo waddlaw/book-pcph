@@ -48,7 +48,7 @@ takeEitherTMVar ma mb =
   fmap Right (takeTMVar mb)
 -- >>
 
-readCheck :: TChan a -> STM a
-readCheck chan = do
-  a <- readTChan chan
-  checkValue a  -- checkValue が例外を投げたとする
+-- readCheck :: TChan a -> STM a
+-- readCheck chan = do
+--   a <- readTChan chan
+--   checkValue a  -- checkValue が例外を投げたとする
