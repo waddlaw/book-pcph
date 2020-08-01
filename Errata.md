@@ -450,3 +450,11 @@ finally io after = do
 誤: `uninterruptibleMask :: ((IO a -> IO a) -> IO b) -> IO b`
 
 正: `uninterruptibleMask :: ((forall a. IO a -> IO a) -> IO b) -> IO b`
+
+## ch11
+
+### p.200 geturls4.hs の書き換え (2つめのURL の最後)
+
+誤: `Shovel`
+
+正: `Spade`

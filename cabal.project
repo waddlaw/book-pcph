@@ -29,6 +29,8 @@ packages:
   ch10/tmvar
   ch10/geturlsfirst
   ch10/tchan
+  ch11/async-geturls
+  ch11/timeout2
 
 with-compiler: ghc-8.8.3
 index-state: 2020-07-01T04:05:28Z

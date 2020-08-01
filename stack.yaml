@@ -31,6 +31,8 @@ packages:
   - ch10/geturlsfirst
   - ch10/tchan
   - ch10/chanbench
+  - ch11/async-geturls
+  - ch11/timeout2
 
 extra-deps:
   - github: AccelerateHS/accelerate

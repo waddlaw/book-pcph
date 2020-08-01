@@ -1,0 +1,28 @@
+cabal-version: 2.4
+name:          async-geturls
+version:       0.1.0.0
+
+library
+  hs-source-dirs:  src
+  build-depends:  base, stm
+
+  exposed-modules: Async
+  default-language: Haskell2010
+
+executable geturls7
+  main-is:          app/geturls7.hs
+  build-depends:    base, bytestring, stm, geturls
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls8
+  main-is:          app/geturls8.hs
+  build-depends:    base, bytestring, geturls, async-geturls
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable geturls9
+  main-is:          app/geturls9.hs
+  build-depends:    base, bytestring, geturls, async-geturls
+  ghc-options:      -O2
+  default-language: Haskell2010
