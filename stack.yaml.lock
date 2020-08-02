@@ -53,6 +53,13 @@ packages:
   original:
     url: https://github.com/tmcdonell/cuda/archive/bf6efc8f9118caac91bde8c9535970f7ab645ead.tar.gz
 - completed:
+    hackage: network-2.6.3.6@sha256:1ca79d81af02d7acd6032d5e6c9bde4618a8fdcfbe19bd42b49d420183975df0,2666
+    pantry-tree:
+      size: 2254
+      sha256: 56285baa11d679521837e1f41311a1aeafa522e7637d408d3decd99c083edba1
+  original:
+    hackage: network-2.6.3.6
+- completed:
     size: 23229
     url: https://github.com/tmcdonell/nvvm/archive/219637eab3aab7275ce0a0c9b0e1855be912fe8a.tar.gz
     name: nvvm

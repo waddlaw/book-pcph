@@ -33,6 +33,8 @@ packages:
   - ch10/chanbench
   - ch11/async-geturls
   - ch11/timeout2
+  - ch12/simple-server
+  - ch12/chat
 
 extra-deps:
   - github: AccelerateHS/accelerate
@@ -44,6 +46,7 @@ extra-deps:
       - accelerate-llvm-ptx
   - github: tmcdonell/cuda
     commit: bf6efc8f9118caac91bde8c9535970f7ab645ead
+  - network-2.6.3.6
   - github: tmcdonell/nvvm
     commit: 219637eab3aab7275ce0a0c9b0e1855be912fe8a
   - repa-3.4.1.4

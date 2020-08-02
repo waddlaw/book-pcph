@@ -1,0 +1,9 @@
+cabal-version: 2.4
+name:          chat
+version:       0.1.0.0
+
+executable chat
+  main-is:          chat.hs
+  build-depends:    base, network, containers, async, stm
+  ghc-options:      -O2
+  default-language: Haskell2010

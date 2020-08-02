@@ -31,6 +31,8 @@ packages:
   ch10/tchan
   ch11/async-geturls
   ch11/timeout2
+  ch12/simple-server
+  ch12/chat
 
 with-compiler: ghc-8.8.3
 index-state: 2020-07-01T04:05:28Z
@@ -82,6 +84,7 @@ constraints:
   happy ^>=1.19,
   http-conduit ^>=2.3,
   monad-par ^>=0.3,
+  network ^>=2.6,
   nvvm ^>=0.10,
   SparseGraph ^>=1.1,
   time ^>=1.9,

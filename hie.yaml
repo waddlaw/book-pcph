@@ -170,3 +170,24 @@ cradle:
 
     - path: "ch10/windowman/src"
       component: "lib:windowman"
+
+    - path: "ch11/async-geturls/src"
+      component: "lib:async-geturls"
+
+    - path: "ch11/async-geturls/./app/geturls7.hs"
+      component: "async-geturls:exe:geturls7"
+
+    - path: "ch11/async-geturls/./app/geturls8.hs"
+      component: "async-geturls:exe:geturls8"
+
+    - path: "ch11/async-geturls/./app/geturls9.hs"
+      component: "async-geturls:exe:geturls9"
+
+    - path: "ch11/timeout2/./timeout2.hs"
+      component: "timeout2:exe:timeout2"
+
+    - path: "ch12/chat/./server.hs"
+      component: "chat:exe:server"
+
+    - path: "ch12/chat/./server2.hs"
+      component: "chat:exe:server2"
