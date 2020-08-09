@@ -82,7 +82,7 @@ withAsync :: IO a -> (Async a -> IO b) -> IO b
 withAsync io operation = bracket (async io) cancel operation
 ```
 
-[findpar.hs](./findseq/findpar1.hs)
+[findpar.hs](./findpar/findpar1.hs)
 
 ```hs
 foldr :: (a -> b -> b) -> b -> [a] -> b
