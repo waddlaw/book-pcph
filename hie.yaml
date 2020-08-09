@@ -186,8 +186,32 @@ cradle:
     - path: "ch11/timeout2/./timeout2.hs"
       component: "timeout2:exe:timeout2"
 
-    - path: "ch12/chat/./server.hs"
-      component: "chat:exe:server"
+    - path: "ch12/chat/./chat.hs"
+      component: "chat:exe:chat"
 
-    - path: "ch12/chat/./server2.hs"
-      component: "chat:exe:server2"
+    - path: "ch12/simple-server/./server.hs"
+      component: "simple-server:exe:server"
+
+    - path: "ch12/simple-server/./server2.hs"
+      component: "simple-server:exe:server2"
+
+    - path: "ch13/findpar/src"
+      component: "lib:findpar"
+
+    - path: "ch13/findpar/./findpar1.hs"
+      component: "findpar:exe:findpar1"
+
+    - path: "ch13/findpar/./findpar2.hs"
+      component: "findpar:exe:findpar2"
+
+    - path: "ch13/findpar/./findpar3.hs"
+      component: "findpar:exe:findpar3"
+
+    - path: "ch13/findpar/./findpar4.hs"
+      component: "findpar:exe:findpar4"
+
+    - path: "ch13/findpar/./findpar5.hs"
+      component: "findpar:exe:findpar5"
+
+    - path: "ch13/findseq/./findseq.hs"
+      component: "findseq:exe:findseq"

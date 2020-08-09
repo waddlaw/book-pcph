@@ -1,0 +1,41 @@
+cabal-version: 2.4
+name:          findpar
+version:       0.1.0.0
+
+library
+  hs-source-dirs:  src
+  build-depends:  base
+
+  exposed-modules: CasIORef
+  default-language: Haskell2010
+
+
+executable findpar1
+  main-is:          findpar1.hs
+  build-depends:    base, filepath, directory, async
+  ghc-options:      -O2 -threaded -rtsopts -eventlog
+  default-language: Haskell2010
+
+executable findpar2
+  main-is:          findpar2.hs
+  build-depends:    base, filepath, directory, async
+  ghc-options:      -O2 -threaded -rtsopts -eventlog
+  default-language: Haskell2010
+
+executable findpar3
+  main-is:          findpar3.hs
+  build-depends:    base, filepath, directory, async
+  ghc-options:      -O2 -threaded -rtsopts -eventlog
+  default-language: Haskell2010
+
+executable findpar4
+  main-is:          findpar4.hs
+  build-depends:    base, filepath, directory, monad-par, abstract-par
+  ghc-options:      -O2 -threaded -rtsopts -eventlog
+  default-language: Haskell2010
+
+executable findpar5
+  main-is:          findpar5.hs
+  build-depends:    base, filepath, directory, monad-par, abstract-par
+  ghc-options:      -O2 -threaded -rtsopts -eventlog
+  default-language: Haskell2010

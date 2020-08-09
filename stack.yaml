@@ -35,6 +35,8 @@ packages:
   - ch11/timeout2
   - ch12/simple-server
   - ch12/chat
+  - ch13/findseq
+  - ch13/findpar
 
 extra-deps:
   - github: AccelerateHS/accelerate
