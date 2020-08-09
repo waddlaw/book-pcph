@@ -2,14 +2,6 @@ cabal-version: 2.4
 name:          findpar
 version:       0.1.0.0
 
-library
-  hs-source-dirs:  src
-  build-depends:  base
-
-  exposed-modules: CasIORef
-  default-language: Haskell2010
-
-
 executable findpar1
   main-is:          findpar1.hs
   build-depends:    base, filepath, directory, async

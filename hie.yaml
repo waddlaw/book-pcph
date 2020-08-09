@@ -195,9 +195,6 @@ cradle:
     - path: "ch12/simple-server/./server2.hs"
       component: "simple-server:exe:server2"
 
-    - path: "ch13/findpar/src"
-      component: "lib:findpar"
-
     - path: "ch13/findpar/./findpar1.hs"
       component: "findpar:exe:findpar1"
 
