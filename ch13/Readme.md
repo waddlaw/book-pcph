@@ -401,3 +401,4 @@ Nothing
   - `Par` モナドには注意深く調整されたワークスチールスケジューラが実装されているため
 - `ParIO` にはエラー処理が無い
   - 修正することは可能
+  - [findpar5.hs](./findpar/findpar5.hs)
