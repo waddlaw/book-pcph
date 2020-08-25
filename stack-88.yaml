@@ -20,12 +20,33 @@ packages:
   # - ch07/logger
   # - ch07/phonebook
   # - ch07/chan
+  # - ch08/geturls
+  # - ch09/geturlscancel
+  # - ch09/modifytwo
+  # - ch09/chan3
+  # - ch09/timeout
+  # - ch09/catch-mask
+  # - ch10/windowman
+  # - ch10/tmvar
+  # - ch10/geturlsfirst
+  # - ch10/tchan
+  # - ch10/chanbench
+  # - ch11/async-geturls
+  # - ch11/timeout2
+  # - ch12/simple-server
+  # - ch12/chat
+  # - ch13/findseq
+  # - ch13/findpar
+  - ch14/distrib-ping
 
 extra-deps:
 - accelerate-1.2.0.1
 - accelerate-io-1.2.0.0
 - accelerate-llvm-1.2.0.1
 - accelerate-llvm-ptx-1.2.0.1
+- github: davidsd/distributed-process
+  commit: 144818f5174522ee4a027a4681ec047e0567c11b
+- distributed-static-0.3.9
 - repa-devil-0.3.2.6
 
 allow-newer: true

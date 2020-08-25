@@ -37,6 +37,9 @@ packages:
   - ch12/chat
   - ch13/findseq
   - ch13/findpar
+  - ch14/distrib-ping
+  - ch14/distrib-chat
+  - ch14/distrib-db
 
 extra-deps:
   - github: AccelerateHS/accelerate
@@ -48,7 +51,13 @@ extra-deps:
       - accelerate-llvm-ptx
   - github: tmcdonell/cuda
     commit: bf6efc8f9118caac91bde8c9535970f7ab645ead
+  - github: davidsd/distributed-process
+    commit: 144818f5174522ee4a027a4681ec047e0567c11b
+  - distributed-process-simplelocalnet-0.2.4
+  - distributed-static-0.3.9
   - network-2.6.3.6
+  - network-multicast-0.2.0
+  - network-transport-tcp-0.6.1
   - github: tmcdonell/nvvm
     commit: 219637eab3aab7275ce0a0c9b0e1855be912fe8a
   - repa-3.4.1.4

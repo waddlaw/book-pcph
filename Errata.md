@@ -472,3 +472,23 @@ finally io after = do
 誤: `1.14秒`
 
 正: `1.13秒`
+
+## ch14
+
+### p.248 Process の型
+
+誤: `data Process`
+
+正: `data Process a`
+
+### p.253 main コード
+
+誤: `Main.＿remoteTable`
+
+正: `Main.__remoteTable`
+
+### p.253 真ん中
+
+誤: `Main.＿remoteTable`
+
+正: `Main.__remoteTable`

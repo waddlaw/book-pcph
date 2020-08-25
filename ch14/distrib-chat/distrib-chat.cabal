@@ -1,0 +1,15 @@
+cabal-version: 2.4
+name:          distrib-chat
+version:       0.1.0.0
+
+executable distrib-chat
+  main-is:          chat.hs
+  build-depends:    base, distrib-ping, containers, stm, network, binary, async, distributed-process
+  ghc-options:      -O2
+  default-language: Haskell2010
+
+executable distrib-chat-noslave
+  main-is:          chat-noslave.hs
+  build-depends:    base, containers, stm, network, binary, async, distributed-process, distributed-process-simplelocalnet
+  ghc-options:      -O2
+  default-language: Haskell2010

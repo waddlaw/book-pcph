@@ -35,9 +35,12 @@ packages:
   ch12/chat
   ch13/findpar
   ch13/findseq
+  ch14/distrib-ping
+  ch14/distrib-chat
+  ch14/distrib-db
 
-with-compiler: ghc-8.8.3
-index-state: 2020-07-01T04:05:28Z
+with-compiler: ghc-8.8.4
+index-state: 2020-08-25T05:04:39Z
 
 source-repository-package
   type: git
@@ -66,6 +69,11 @@ source-repository-package
   location: https://github.com/tmcdonell/nvvm
   tag: 219637eab3aab7275ce0a0c9b0e1855be912fe8a
 
+source-repository-package
+  type: git
+  location: https://github.com/davidsd/distributed-process
+  tag: 144818f5174522ee4a027a4681ec047e0567c11b
+
 package cuda
   extra-lib-dirs: /usr/local/cuda-10.1/lib64
   extra-include-dirs: /usr/local/cuda-10.1/include
@@ -78,11 +86,17 @@ constraints:
   accelerate-llvm-ptx ^>=1.4,
   alex ^>=3.2, 
   array ^>=0.5,
+  async ^>=2.2,
   base ^>=4.13,
+  binary ^>= 0.8,
   bytestring ^>=0.10,
   containers ^>=0.6,
   cuda ^>=0.10,
   deepseq ^>=1.4,
+  distributed-closure ^>=0.4,
+  distributed-process ^>=0.7,
+  distributed-process-simplelocalnet ^>=0.2,
+  distributed-static ^>=0.3,
   fclabels ^>=2.0,
   happy ^>=1.19,
   http-conduit ^>=2.3,
@@ -90,12 +104,16 @@ constraints:
   network ^>=2.6,
   nvvm ^>=0.10,
   SparseGraph ^>=1.1,
+  template-haskell ^>=2.15,
   time ^>=1.9,
   random ^>=1.1,
   repa ^>=3.4,
   repa-devil ^>=0.3,
-  stm ^>=2.5
+  stm ^>=2.5,
+  text ^>=1.2
 
 allow-newer:
   -- accelerate-io:base
+  binary:base
+  distributed-process-simplelocalnet:containers
   repa-devil:transformers

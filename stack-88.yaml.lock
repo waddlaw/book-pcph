@@ -33,6 +33,24 @@ packages:
   original:
     hackage: accelerate-llvm-ptx-1.2.0.1
 - completed:
+    size: 127651
+    url: https://github.com/davidsd/distributed-process/archive/144818f5174522ee4a027a4681ec047e0567c11b.tar.gz
+    name: distributed-process
+    version: 0.7.4
+    sha256: 99f84eb0150ebb112523584f39176a5213b82f416c07875b632c5bd1f38daa00
+    pantry-tree:
+      size: 5756
+      sha256: c124c046e9151f1bc6bed4f069e195858f3f7e7bee3d8d2c2be46197b2846c94
+  original:
+    url: https://github.com/davidsd/distributed-process/archive/144818f5174522ee4a027a4681ec047e0567c11b.tar.gz
+- completed:
+    hackage: distributed-static-0.3.9@sha256:0eb308ee416db4541cb5b4d2dff387e7c9394e6deaf76b7e829ce46add4448bc,2237
+    pantry-tree:
+      size: 286
+      sha256: 4f42a4fe0ce97fb4a1ae2c947b6077ee718a5f11545a72387c13a0edc405d28e
+  original:
+    hackage: distributed-static-0.3.9
+- completed:
     hackage: repa-devil-0.3.2.6@sha256:b58a7beaad814abe90f68332fffe05748f2af14fef0dfd3352d52c27fae6924d,2131
     pantry-tree:
       size: 224
