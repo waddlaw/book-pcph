@@ -1,0 +1,9 @@
+cabal-version: 2.4
+name:          mvar4
+version:       0.1.0.0
+
+executable mvar4
+  main-is:          mvar4.hs
+  build-depends:    base
+  ghc-options:      -O2 -threaded -eventlog
+  default-language: Haskell2010

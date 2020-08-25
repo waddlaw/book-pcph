@@ -40,6 +40,9 @@ packages:
   - ch14/distrib-ping
   - ch14/distrib-chat
   - ch14/distrib-db
+  - ch15/mvar
+  - ch15/deadlock
+  - ch15/threadperf
 
 extra-deps:
   - github: AccelerateHS/accelerate

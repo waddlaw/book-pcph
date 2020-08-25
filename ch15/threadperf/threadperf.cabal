@@ -1,0 +1,15 @@
+cabal-version: 2.4
+name:          threadperf
+version:       0.1.0.0
+
+executable threadperf1
+  main-is:          threadperf1.hs
+  build-depends:    base
+  ghc-options:      -O2 -rtsopts -prof
+  default-language: Haskell2010
+
+executable threadperf2
+  main-is:          threadperf2.hs
+  build-depends:    base
+  ghc-options:      -O2
+  default-language: Haskell2010
